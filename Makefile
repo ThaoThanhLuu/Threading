@@ -1,12 +1,14 @@
+CC=g++
+CCFLAGS=-pthread
 
 output: main.o Bitset.o
-	g++ main.o Bitset.o -o output
+	$(CC) $(CCFLAGS) main.o Bitset.o -o output
 
 main.o: main.cpp
-	g++ -c main.cpp
+	$(CC) $(CCFLAGS) -c main.cpp
 
 Bitset.o: Bitset.cpp Bitset.h
-	g++ -c Bitset.cpp
+	$(CC) $(CCFLAGS) -c Bitset.cpp
 
 clean:
 	rm *.o output

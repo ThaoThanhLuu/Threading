@@ -1,9 +1,14 @@
+I honor and swear that this is my work and didn't ask for help from anyone beside the TA or the instructor
 
-HOW TO BUILD on UNIX
+OS Version:Fedora 30
+Compiler:g++ (GCC) 9.1.1 
+
+HOW TO BUILD on UNIX/LINUX
 
 Step 1
 	$make
 Step 2
 	$./output
 
-BUILDING IN LINUX
+
+

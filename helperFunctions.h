@@ -61,7 +61,7 @@ const int minMatrix       = 1;
 string positiveMatrix  = "Enter a positive integer for the size of matrix to use \n"
                          "Has to be 1 <= n <= 10000: \n";
 string threads         = "Enter a positive integer for the number of threads to use\n"
-                         "Has 1 <= m <= 100: \n";
+                         "Has to be 1 <= m <= 100: \n";
 string inputChoice     = "Enter your choice:\n";
 string errorMessage    = "You must chose either 1, 2, or 3. \n";
 
@@ -69,9 +69,7 @@ void executeP1(const int i_N, const int i_M)
 {
     // Variables:
     makeBinFileP1(i_N);
-
     Bitset* set = new Bitset(s_FILENAME, i_N*i_N);
-
     do
     {
         pthread_t threads[i_M];

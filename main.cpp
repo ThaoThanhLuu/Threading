@@ -4,7 +4,7 @@
 #include <pthread.h>
 #include <mutex>
 #include <iomanip>
-#include "Bitset.h"
+#include "Bits.h"
 #include "Sorting.h"
 #include "helperFunctions.h"
 
